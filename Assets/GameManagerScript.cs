@@ -13,7 +13,7 @@ public class NewBehaviourScript
         for (int i = 0; i < map.Length; i++) {
             debugText += map[i].ToString() + ",";
         }
-        Debug.Log(debugText); ;
+        Debug.Log(debugText);
     }
 
     /// <summary>
@@ -84,7 +84,7 @@ public class NewBehaviourScript
 
         //右のキーを押したとき
         if (Input.GetKeyDown(KeyCode.RightArrow)) {
-
+            Debug.Log(Input.GetKeyDown(KeyCode.RightArrow));
             targetIndex = GetPlayerIndex();
             //配列mapの1が入っている要素番号を求める
             MoveNumber(1, targetIndex, targetIndex + 1);
